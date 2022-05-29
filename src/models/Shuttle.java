@@ -41,4 +41,3 @@ public class Shuttle extends Standard {
 
 }
 
-// para tripulada alinear y acoplar.

@@ -5,8 +5,7 @@ public class Robotic extends Standard {
     int engines;
     float thrust;
 
-    public Robotic() {
-    }
+    public Robotic() { }
 
     public Robotic(String name, String fuel, float height, float weight) {
         super(name, fuel, height, weight);
@@ -21,6 +20,7 @@ public class Robotic extends Standard {
     public void deploy(){
         System.out.println("Deploy instruments");
         System.out.println("〓 ≡ ╝ ╚ ╔ ╗ ╬ ═ ╓ ╩ ┠ ┨ ┯ ┷ ┏ ┓ ┗ ┛ ┳ ⊥ ﹃﹄ ┌ ┐ └ ┘ ∟ ");
+        System.out.println("The instruments have been deployed.");
     }
 
     public void ping(){
@@ -34,5 +34,3 @@ public class Robotic extends Standard {
     }
 
 }
-
-// para no tripulada desplegar y mandar ping ok.
