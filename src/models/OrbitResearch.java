@@ -4,6 +4,8 @@ public class OrbitResearch extends Standard implements IAligneble, IEngageable {
     String country;
     float orbitRadius;
 
+
+
     public OrbitResearch() { }
 
     public OrbitResearch(String name, String fuel, int height, int weight) {
@@ -27,12 +29,15 @@ public class OrbitResearch extends Standard implements IAligneble, IEngageable {
     public void welcome() {
         System.out.println(" ┠ Welcome to space research center in earth orbit ┨ ");
         System.out.println(" ┠                     "+name+"                    ┨ ");
+        System.out.println("   ");
     }
 
     @Override
     public void align() {
         System.out.println(" ┠ ┯ ┷ ┯ ┷ ┨ ");
         System.out.println(" ┠ ┷ ┯ ┷ ┯ ┨ ");
+        System.out.println(" ship lined up");
+        System.out.println("   ");
     }
 
     @Override
@@ -40,13 +45,15 @@ public class OrbitResearch extends Standard implements IAligneble, IEngageable {
         System.out.println(" ┠ ┷  ┷  ┷  ┷ ┨ ");
         System.out.println(" ┠            ┨ ");
         System.out.println(" ┠ ┯  ┯  ┯  ┯ ┨ ");
+        System.out.println("The spaceship docked");
+        System.out.println("   ");
     }
 
 
 
     @Override
     public void accelerate() {
-        this.speed = this.speed + 1;
+        this.speed = 27600; ;
     }
 
     @Override

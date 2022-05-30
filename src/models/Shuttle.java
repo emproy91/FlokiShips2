@@ -32,6 +32,7 @@ public class Shuttle extends Standard {
         System.out.println("|>>===⊃");
         System.out.println("|>>>======D");
         System.out.println("|>>===⊃");
+        System.out.println("   ");
     }
 
     public void takeoff() {
@@ -47,6 +48,7 @@ public class Shuttle extends Standard {
         System.out.println("|----------***333>>>===⊃");
         System.out.println("|--------*3333333>>>======D");
         System.out.println("|----------***333>>>===⊃");
+        System.out.println("   ");
 
     }
 

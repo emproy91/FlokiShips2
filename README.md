@@ -32,5 +32,7 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 Please make sure to update tests as appropriate.
 
+## Referals
+[Dragon_2](https://es.wikipedia.org/wiki/Dragon_2#Vuelos_con_tripulaci%C3%B3n)
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)

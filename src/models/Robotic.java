@@ -31,6 +31,7 @@ public class Robotic extends Standard {
         System.out.println("Deploy instruments");
         System.out.println("〓 ≡ ╝ ╚ ╔ ╗ ╬ ═ ╓ ╩ ┠ ┨ ┯ ┷ ┏ ┓ ┗ ┛ ┳ ⊥ ﹃﹄ ┌ ┐ └ ┘ ∟ ");
         System.out.println("The instruments have been deployed.");
+        System.out.println("   ");
     }
 
     public void ping(){
@@ -41,6 +42,7 @@ public class Robotic extends Standard {
         System.out.println("2 packets transmitted, 2 received, 0% packet loss, time 4003ms");
         System.out.println("rtt min/avg/max/mdev = 125.193/135.344/145.344/130.041 ms");
         System.out.println("Rover@space-x  ~  ");
+        System.out.println("   ");
     }
 
     @Override

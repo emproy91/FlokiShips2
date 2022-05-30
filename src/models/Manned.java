@@ -1,8 +1,7 @@
 package models;
 
 public class Manned extends Standard implements IAligneble, IEngageable {
-    int crew;
-    int stay;
+    int crew, stay;
 
     public Manned() { }
 
@@ -31,14 +30,16 @@ public class Manned extends Standard implements IAligneble, IEngageable {
     public void align(){
         System.out.println(" ┠ ╔--╗ ┨ ");
         System.out.println(" ┠ ╚--╝ ┨ ");
+        System.out.println(" ship lined up");
+        System.out.println("   ");
     }
-    // para tripulada alinear y acoplar.
     @Override
     public void engage(){
         System.out.println("Docking the spaceship.");
         System.out.println(" ┠-╗      ╔-┨ ");
         System.out.println(" ┠-╝      ╚-┨ ");
         System.out.println("The spaceship docked at International Space Station");
+        System.out.println("   ");
     }
 
     @Override
