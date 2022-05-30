@@ -5,22 +5,33 @@ public class Shuttle extends Standard {
     int load, boosters;
 
     public Shuttle (){};
-
-    public Shuttle(String name, String fuel, float height, float weight) {
+    public Shuttle(String name, String fuel, int height, int weight) {
         super(name, fuel, height, weight);
     }
 
-    public Shuttle(String name, String fuel, float height, float weight, int load, int boosters) {
+
+    public Shuttle(String name, String fuel, int height, int weight, int load, int boosters) {
         super(name, fuel, height, weight);
         this.load = load;
         this.boosters = boosters;
+
     }
 
-    public void boosters() {
-        System.out.println("Coupled rocket boosters.");
-        System.out.println("|>>===");
-        System.out.println("|>>>=====D");
-        System.out.println("|>>===");
+    @Override
+    public String toString() {
+        return "Shuttle{" +
+                super.toString() +
+                "\n         Load= " + load +" Ton"+
+                ", Boosters= " + boosters +
+                "\n       }";
+    }
+
+
+    public void cBoosters() {
+        System.out.println(boosters+" Coupled rocket boosters.");
+        System.out.println("|>>===⊃");
+        System.out.println("|>>>======D");
+        System.out.println("|>>===⊃");
     }
 
     public void takeoff() {
@@ -33,11 +44,37 @@ public class Shuttle extends Standard {
             }
             System.out.println(10 - i);
         }
-        System.out.println("|------***333>>>===");
-        System.out.println("|----*3333333>>>=====D");
-        System.out.println("|------***333>>>===");
+        System.out.println("|----------***333>>>===⊃");
+        System.out.println("|--------*3333333>>>======D");
+        System.out.println("|----------***333>>>===⊃");
 
     }
 
+    public int getLoad() {
+        return load;
+    }
+
+    public void setLoad(int load) {
+        this.load = load;
+    }
+
+    public int getBoosters() {
+        return boosters;
+    }
+
+    public void setBoosters(int boosters) {
+        this.boosters = boosters;
+    }
+
+
+    @Override
+    public void accelerate() {
+        this.speed = this.speed + 100;
+    }
+
+    @Override
+    public void decelerate() {
+        this.speed = this.speed - 100;
+    }
 }
 
