@@ -1,8 +1,15 @@
 package models;
 
 public class Manned extends Standard implements IAligneble, IEngageable {
+
+    /**
+     * This represents local attributes.
+     */
     int crew, stay;
 
+    /**
+     * Create a new instances of the Manned class.
+     */
     public Manned() { }
 
 
@@ -11,12 +18,19 @@ public class Manned extends Standard implements IAligneble, IEngageable {
         super(name, fuel, height, weight);
     }
 
+    /**
+     * Overloading and overriding methods.
+     */
     public Manned(String name, String fuel, int height, int weight, int crew, int stay) {
         super(name, fuel, height, weight);
         this.crew = crew;
         this.stay = stay;
     }
 
+    /**
+     * Create a new character string with the parameters of the class.
+     * @return String array with data.
+     */
     @Override
     public String toString() {
         return "Manned{" +

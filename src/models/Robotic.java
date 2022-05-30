@@ -2,9 +2,16 @@ package models;
 
 public class Robotic extends Standard {
 
+    /**
+     * This represents local attributes.
+     */
     int engines;
     float thrust;
 
+
+    /**
+     * Create a new instances of the Robotic class.
+     */
     public Robotic() { }
 
 
@@ -12,12 +19,19 @@ public class Robotic extends Standard {
         super(name, fuel, height, weight);
     }
 
+    /**
+     * Overloading and overriding methods.
+     */
     public Robotic(String name,String fuel, int height, int weight, int engines, float thrust) {
         super(name, fuel, height, weight);
         this.engines = engines;
         this.thrust = thrust;
     }
 
+    /**
+     * Create a new character string with the parameters of the class.
+     * @return String array with data.
+     */
     @Override
     public String toString() {
         return "Robotic{" +

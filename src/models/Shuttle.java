@@ -1,15 +1,26 @@
 package models;
 
+/**
+ * Child class inherited from Standard.
+ */
 public class Shuttle extends Standard {
 
+    /**
+     * This represents local attributes.
+     */
     int load, boosters;
 
+    /**
+     * Create a new instances of the Shuttle class.
+     */
     public Shuttle (){};
     public Shuttle(String name, String fuel, int height, int weight) {
         super(name, fuel, height, weight);
     }
 
-
+    /**
+     * Overloading and overriding methods.
+     */
     public Shuttle(String name, String fuel, int height, int weight, int load, int boosters) {
         super(name, fuel, height, weight);
         this.load = load;
@@ -17,6 +28,10 @@ public class Shuttle extends Standard {
 
     }
 
+    /**
+     * Create a new character string with the parameters of the class.
+     * @return String array with data.
+     */
     @Override
     public String toString() {
         return "Shuttle{" +

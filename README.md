@@ -24,6 +24,15 @@ Run the project from the main class with Shift+F10.
 
 In the Run tab you will find a console dialog, follow the instructions to make your fantasy spacecraft.
 
+
+This project has 1 packages, models.
+
+In models package do you find father class Standard and her classes daughters; Shuttle, Robotic, Manned, OrbitResearch.
+
+In models package do you find 2 interfaces IAligneble and IEngageable.
+
+In clas package do you find Main class with the treatment of parameters, launchers from other classes methods.
+
 More info in the comments of each class.
 
 
@@ -34,5 +43,7 @@ Please make sure to update tests as appropriate.
 
 ## Referals
 [Dragon_2](https://es.wikipedia.org/wiki/Dragon_2#Vuelos_con_tripulaci%C3%B3n)
+
+[clasificacion de las naves espaciales](https://moaramore.com/2016/05/14/clasificacion-de-las-naves-espaciales/)
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
